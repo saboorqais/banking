@@ -1,6 +1,14 @@
 "use client";
 import React from "react";
 import { FaHome, FaUser, FaSignOutAlt } from "react-icons/fa";
+import { BiCard, BiTransfer } from "react-icons/bi";
+import { FaHistory } from "react-icons/fa";
+import { MdOutlineAccountBalanceWallet } from "react-icons/md";
+import { FaSearch } from "react-icons/fa";
+import { FaLocationArrow } from "react-icons/fa";
+import { FaFileExport } from "react-icons/fa";
+import Link from "next/link";
+
 import { IoIosSettings } from "react-icons/io";
 import { Button } from "@/components/ui/button";
 import {
@@ -18,66 +26,63 @@ import {
   DropdownMenuSubTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-
+import { FaInvision } from "react-icons/fa6";
 
 function DashboardLayout({ children }) {
   return (
-    <section className="flex flex-row max-h-screen overflow-y-hidden ">
-      <aside className=" w-64 align-center flex flex-col justify-between bg-sidebar">
-        <div>
-          <h1 className="text-3xl	 mt-12 text-center font-bold text-black">
-            Discover
-          </h1>
-          <div className="flex flex-col px-10 mt-3">
-            <section>
-              <div className="mt-3 flex flex-row justify-start gap-3">
-                <FaHome size={20} color="black" /> {/* Render the home icon */}
-                <button className="text-center text-black font-semibold	">
-                  Discover
+    <section className="flex flex-row min-h-screen max-h-screen overflow-y-hidden ">
+      <aside className=" w-64 max-w-72 align-center flex flex-col justify-between bg-sidebar">
+        <div className="flex flex-col  w-full items-left px-6">
+          <Link href={"/dashboard"}>
+            <h1 className="text-3xl	 mt-6 w-3/6 font-bold text-black">
+              Dashboard
+            </h1>
+          </Link>
+
+          <section className="flex flex-col items-left w-full">
+            <div className="mt-3 flex flex-row justify-start gap-3">
+              <BiTransfer size={20} color="black" />{" "}
+              {/* Render the home icon */}
+              <Link href={"/dashboard/transfer"}>
+                <button className="text-center text-black ">Transfer</button>
+              </Link>
+            </div>
+            <div className="mt-3 flex flex-row justify-start gap-3">
+              <FaInvision size={20} color="black" /> {/* Render the home icon */}
+              <Link href={"/dashboard/investment"}>
+
+              <button className="text-center text-black 	">Investment</button>
+              </Link>
+            
+            </div>
+            <div className="mt-3 flex flex-row justify-start gap-3">
+              <MdOutlineAccountBalanceWallet size={20} color="black" />{" "}
+              {/* Render the home icon */}
+              <Link href={"/dashboard/transaction"}>
+                <button className="text-center text-black 	">Transaction</button>
+              </Link>
+            </div>
+            <div className="mt-3 flex flex-row justify-start gap-3">
+              <BiCard size={20} color="black" /> {/* Render the home icon */}
+              <Link href={"/dashboard/cards"}>
+                <button className="text-center text-black 	">
+                  Cards
                 </button>
-              </div>
-              <div className="mt-3 flex flex-row justify-start gap-3">
-                <FaHome size={20} color="black" /> {/* Render the home icon */}
-                <button className="text-center text-black font-semibold	">
-                  Discover
+              </Link>
+            </div>
+            <div className="mt-3 flex flex-row justify-start gap-3">
+              <BiCard size={20} color="black" /> {/* Render the home icon */}
+              <Link href={"/dashboard/card"}>
+                <button className="text-center text-black 	">
+                  My Card
                 </button>
-              </div>
-              <div className="mt-3 flex flex-row justify-start gap-3">
-                <FaHome size={20} color="black" /> {/* Render the home icon */}
-                <button className="text-center text-black font-semibold	">
-                  Search
-                </button>
-              </div>
-              <div className="mt-3 flex flex-row justify-start gap-3">
-                <FaHome size={20} color="black" /> {/* Render the home icon */}
-                <button className="text-center text-black font-semibold	">
-                  My Finds
-                </button>
-              </div>
-            </section>
-            <section className="mt-6">
-              <div className="mt-3 flex flex-row justify-start gap-3">
-                <FaHome size={20} color="black" /> {/* Render the home icon */}
-                <button className="text-center text-black font-semibold	">
-                  Discover
-                </button>
-              </div>
-              <div className="mt-3 flex flex-row justify-start gap-3">
-                <FaHome size={20} color="black" /> {/* Render the home icon */}
-                <button className="text-center text-black font-semibold	">
-                  Discover
-                </button>
-              </div>
-              <div className="mt-3 flex flex-row justify-start gap-3">
-                <FaHome size={20} color="black" /> {/* Render the home icon */}
-                <button className="text-center text-black font-semibold	">
-                  Search
-                </button>
-              </div>
-            </section>
-          </div>
+              </Link>
+            </div>
+
+      
+          </section>
         </div>
-        <div className="flex flex-col px-10 mt-3 pb-3">
+        <div className="flex flex-col px-6 mt-3 pb-3">
           <section className="mt-6">
             <div className="mt-3 flex flex-row justify-start gap-3">
               <IoIosSettings size={20} color="black" />{" "}
@@ -96,8 +101,8 @@ function DashboardLayout({ children }) {
           </section>
         </div>
       </aside>
-      <div className="w-full p-4 flex flex-col">
-        <navbar className="min-w-full m-4 flex flex-row justify-between">
+      <div className="w-full flex flex-col">
+        <navbar className="min-w-full flex flex-row justify-between p-4">
           <div className="flex w-full gap-6 items-center">
             <h1 className="text-2xl text-center font-bold text-black">
               Dashbord

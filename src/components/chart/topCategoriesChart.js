@@ -77,11 +77,11 @@ export const data = {
     {
       label: "Dataset 1",
       data: labels.map(() => Math.random()) ,
-      backgroundColor: "#B5DCF2",
+      backgroundColor: "black",
     },
   ],
 };
 
-export function VerticalBar() {
+export function TopCategoriesChart() {
   return <Bar options={options} data={data} />;
 }

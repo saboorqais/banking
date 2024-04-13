@@ -19,14 +19,31 @@ ChartJS.register(
   Tooltip,
   Legend
 );
-
+const plugin = {
+  id: 'customCanvasBackgroundColor',
+  beforeDraw: (chart, args, options) => {
+    const {ctx} = chart;
+    ctx.save();
+    ctx.globalCompositeOperation = 'destination-over';
+    ctx.fillStyle ='#374955';
+    ctx.fillRect(0, 0, chart.width, chart.height);
+    ctx.restore();
+  }
+};
 export const options = {
   responsive: true,
   maintainAspectRatio: false,
+  legend: {
+    display: true,
+    fontColor: "white",
+    fontSize: 18,
+    position: "top",
+  },
   plugins: {
     legend: {
       display: true,
-
+      fontColor: "white",
+      fontSize: 18,
       position: "top",
     },
     title: {
@@ -37,8 +54,12 @@ export const options = {
   scales: {
     // to remove the labels
     x: {
+    
+      barPercentage: .25, // Adjust the space between bars
+      categoryPercentage: .25,
       ticks: {
-        display: false,
+        display: true,
+        color: 'white',
       },
 
       // to remove the x-axis grid
@@ -52,8 +73,9 @@ export const options = {
     // to remove the y-axis labels
     y: {
       ticks: {
-        display: false,
+        display: true,
         beginAtZero: true,
+        color: 'white',
       },
       // to remove the y-axis grid
       grid: {
@@ -73,17 +95,25 @@ export const data = {
   datasets: [
     {
       label: "Dataset 1",
+      color:"white",
       data: labels.map(() => Math.random()),
-      backgroundColor: "#B5DCF2",
+      backgroundColor: "rgb(248, 249, 250)",
+      barThickness:15,
+      barPercentage: .25, // Adjust the space between bars
+      categoryPercentage: .25,
     },
     {
+      color: 'white',
       label: "Dataset 1",
       data: labels.map(() => Math.random()),
       backgroundColor: "#B5DCF2",
+      barThickness:15,
+      barPercentage: .25, // Adjust the space between bars
+      categoryPercentage: .25,
     },
   ],
 };
 
 export function VerticalSecondBar() {
-  return <Bar options={options} data={data} />;
+  return <Bar options={options} data={data} plugins={[plugin]} />;
 }

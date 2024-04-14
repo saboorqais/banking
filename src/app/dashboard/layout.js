@@ -1,12 +1,7 @@
 "use client";
-import React from "react";
-import { FaHome, FaUser, FaSignOutAlt } from "react-icons/fa";
+import { FaSignOutAlt } from "react-icons/fa";
 import { BiCard, BiTransfer } from "react-icons/bi";
-import { FaHistory } from "react-icons/fa";
 import { MdOutlineAccountBalanceWallet } from "react-icons/md";
-import { FaSearch } from "react-icons/fa";
-import { FaLocationArrow } from "react-icons/fa";
-import { FaFileExport } from "react-icons/fa";
 import Link from "next/link";
 
 import { IoIosSettings } from "react-icons/io";

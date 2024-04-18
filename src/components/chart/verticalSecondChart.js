@@ -25,7 +25,7 @@ const plugin = {
     const {ctx} = chart;
     ctx.save();
     ctx.globalCompositeOperation = 'destination-over';
-    ctx.fillStyle ='#374955';
+    ctx.fillStyle ='#ebf3f9';
     ctx.fillRect(0, 0, chart.width, chart.height);
     ctx.restore();
   }
@@ -59,15 +59,15 @@ export const options = {
       categoryPercentage: .25,
       ticks: {
         display: true,
-        color: 'white',
+        color: '#22223b',
       },
 
       // to remove the x-axis grid
       grid: {
         drawBorder: false,
-        borderColor: "#B5DCF2",
+        borderColor: "#a3cef1",
         display: false,
-        color: "#B5DCF2",
+        color: "#a3cef1",
       },
     },
     // to remove the y-axis labels
@@ -75,14 +75,14 @@ export const options = {
       ticks: {
         display: true,
         beginAtZero: true,
-        color: 'white',
+        color: '#22223b',
       },
       // to remove the y-axis grid
       grid: {
-        borderColor: "#B5DCF2",
+        borderColor: "#a3cef1",
         drawBorder: false,
         display: true,
-        color: "#B5DCF2",
+        color: "#a3cef1",
       },
     },
   },
@@ -97,7 +97,7 @@ export const data = {
       label: "Dataset 1",
       color:"white",
       data: labels.map(() => Math.random()),
-      backgroundColor: "rgb(248, 249, 250)",
+      backgroundColor: "#a3cef1",
       barThickness:15,
       barPercentage: .25, // Adjust the space between bars
       categoryPercentage: .25,
@@ -106,7 +106,7 @@ export const data = {
       color: 'white',
       label: "Dataset 1",
       data: labels.map(() => Math.random()),
-      backgroundColor: "#B5DCF2",
+      backgroundColor: "#3d5a80",
       barThickness:15,
       barPercentage: .25, // Adjust the space between bars
       categoryPercentage: .25,

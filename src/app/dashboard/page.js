@@ -62,38 +62,32 @@ export default function Page() {
         </div>
         <div className="min-w-full flex flex-row gap-4">
           <div
-            className="flex flex-col p-4 w-1/2"
-            style={{
-              backgroundColor: "rgb(198, 181, 242)",
-            }}
+            className="flex flex-col p-4 w-1/2 bg-balanceCard rounded-xl"
           >
             <div className="flex flex-row w-full justify-between ">
-              <h4 className="text-md font-semibold">Goals</h4>
+              <h4 className="text-xl text-[#233d60] font-bold">Goals</h4>
               <div className="flex flex-row">
-                <IoIosArrowBack size={10} />
-                <IoIosArrowForward size={10} />
+                <IoIosArrowBack size={18} color={"#233d60"} />
+                <IoIosArrowForward size={18} color={"#233d60"} />
               </div>
             </div>
-            <p className="text-sm">Summer Vacation</p>
+            <p className="text-sm text-[#233d60]/60">Summer Vacation</p>
             <div className="flex flex-row gap-4 w-full mt-4 items-center">
-              <BsGraphUpArrow size={50} />
+              <BsGraphUpArrow size={50} color={"#233d60"} />
               <div className="w-full flex flex-col gap-1">
-                <h2 className="text-lg font-semibold">62% Reached</h2>
-                <div className="w-full bg-gray-200  h-2.5 dark:bg-gray-700">
+                <h2 className="text-lg text-[#233d60] font-semibold">62% Reached</h2>
+                <div className="w-full bg-[#a9c2d5]/40 rounded-full h-2.5 dark:bg-gray-700">
                   <div
-                    className="bg-black h-2.5 "
+                    className="bg-[#233d60] h-2.5 rounded-full"
                     style={{ width: "45%" }}
                   ></div>
                 </div>
-                <p className="text-sm">$1,234 out of $2,435</p>
+                <p className="text-sm text-[#233d60]/60">$1,234 out of $2,435</p>
               </div>
             </div>
           </div>
           <div
-            className="flex flex-col p-4 w-1/2 gap-2"
-            style={{
-              backgroundColor: "rgb(254, 192, 167)",
-            }}
+            className="flex flex-col p-4 w-1/2 gap-2 bg-balanceCard rounded-xl"
           >
             <h4 className="text-md font-semibold">Spending Overview</h4>
             <div className="flex flex-row gap-4 items-center">
@@ -222,7 +216,7 @@ export default function Page() {
               <IoIosArrowForward size={10} color="white" />
             </div>
           </div>
-          <div className="flex flex-row p-4 gap-8">
+          <div className="flex flex-row flex-wrap p-4 gap-8 ">
         
 
             <div className="flex flex-col gap-4 items-center">

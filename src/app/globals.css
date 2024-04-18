@@ -6,8 +6,8 @@
   :root {
     --greyBorder:#55595F;
     --stockInc: #5cb4ab;
-    --balanceCard: #ebf3f9;
-    --sidebar: #f8f9fa;
+    --balanceCard: rgba(235, 243, 249, 0.7);
+    --sidebar: #f8f9fb;
     --background: 0 0% 100%;
     --foreground: 224 71.4% 4.1%;
 

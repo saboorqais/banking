@@ -133,7 +133,7 @@ export default function Page() {
             <IoIosArrowForward size={20} />
           </div>
         </div>
-        <div className="flex flex-row gap-4 min-w-full h-80 min-h-80">
+        <div className="flex flex-row gap-4  h-80 min-h-80">
           <VerticalSecondBar />
         </div>
       </div>

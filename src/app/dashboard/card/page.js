@@ -18,10 +18,10 @@ export default function Page() {
   return (
     <div className="flex flex-col m-4 gap-4 overflow-y-auto">
       <h1 className="text-2xl font-semibold">Credit Card</h1>
-      <div className="w-full flex flex-row gap-4">
-        <div className="w-5/12 flex flex-row gap-4">
+      <div className=" flex flex-row max-2xl:flex-col gap-4 w-full">
+        <div className="w-5/12 max-2xl:w-full flex flex-row max-sm:flex-col gap-4">
           <div
-            className="w-1/2 rounded-2xl"
+            className="w-1/2 max-sm:w-full rounded-2xl"
             style={{
               backgroundColor: "rgb(254, 192, 167)",
             }}
@@ -35,8 +35,8 @@ export default function Page() {
               <FcSimCardChip size={60} />
             </div>
             <div className="flex flex-col gap-2 p-6">
-              <h4 className="text-black">Available Balance</h4>
-              <h2 className="text-black text-2xl font-bold">USD 100,000.00</h2>
+              <h4 className="">Available Balance</h4>
+              <h2 className=" text-2xl font-bold">USD 100,000.00</h2>
             </div>
             <div className="flex flex-col p-6">
               <div className="flex flex-row gap-2">
@@ -53,21 +53,21 @@ export default function Page() {
           </div>
 
           <div
-            className="w-1/2 flex flex-col gap-4 p-4 rounded-2xl"
+            className="w-1/2 max-sm:w-full flex flex-col gap-4 p-4 rounded-2xl"
             style={{
               backgroundColor: "#f8f9fa",
             }}
           >
             <div>
               <h3 className="text-lg font-semibold">Credit Cards</h3>
-              <hr class="h-[4px] my-2 bg-black border-0 dark:bg-white rounded-2xl"></hr>
+              <hr class="h-[4px] my-2 bg-[#233d60] border-0 dark:bg-white rounded-2xl"></hr>
             </div>
 
             <div className="flex flex-col gap-2">
               <h4 className="text-md font-thin">Type</h4>
               <div className="flex flex-row gap-4 items-center">
                 <h4 className="font-semibold text-lg">Physical</h4>
-                <div className="flex flex-row gap-2">
+                <div className="flex flex-row gap-2 items-center justify-center">
                   <FaCircle size={15} color="rgb(32, 178, 170)" />
                   <p className="font-thin">Active</p>
                 </div>
@@ -90,7 +90,7 @@ export default function Page() {
               <h4 className="text-md font-thin">Expiration Date</h4>
               <span className="flex flex-row items-center gap-4">
                 <h4 className="text-md ">12/24</h4>
-                <div className="flex flex-row gap-2">
+                <div className="flex flex-row gap-2 items-center justify-center">
                   <FaCircle size={15} color="#d62554ff" />
                   <p className="font-semibold" style={{ color: "#d62554ff" }}>
                     1 Month Left
@@ -110,11 +110,11 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <div className="w-7/12 max-w-7/12 flex flex-col gap-4">
+        <div className="w-7/12 max-w-7/12 max-2xl:w-full flex flex-col gap-4">
           <h1 className=" text-2xl font-semibold">Quick Action</h1>
           <div className="flex flex-row w-full gap-4">
             <div
-              className="flex flex-col w-1/3 min-h-36 justify-center items-center gap-3"
+              className="flex flex-col w-1/3 min-h-36 justify-center items-center gap-3 rounded-xl"
               style={{ backgroundColor: "rgb(181, 220, 242)",width:"33.333%" }}
             >
               <div className="w-20 h-20 bg-white flex flex-row justify-center items-center rounded-full">
@@ -123,7 +123,7 @@ export default function Page() {
               <p>Show PIN</p>
             </div>
             <div
-              className="flex flex-col w-1/3 min-h-36 justify-center items-center gap-3"
+              className="flex flex-col w-1/3 min-h-36 justify-center items-center gap-3 rounded-xl"
               style={{ backgroundColor: "rgb(181, 220, 242)",width:"33.333%" }}
             >
               <div className="w-20 h-20 bg-white flex flex-row justify-center items-center rounded-full">
@@ -132,7 +132,7 @@ export default function Page() {
               <p>Card Blocking</p>
             </div>
             <div
-              className="flex flex-col  min-h-36 justify-center items-center gap-3"
+              className="flex flex-col  min-h-36 justify-center items-center gap-3 rounded-xl"
               style={{ backgroundColor: "rgb(181, 220, 242)",width:"33.333%" }}
             >
               <div className="w-20 h-20 bg-white flex flex-row justify-center items-center rounded-full">
@@ -143,7 +143,7 @@ export default function Page() {
           </div>
           <div className="flex flex-row w-full gap-4">
             <div
-              className="flex flex-col  min-h-36 justify-center items-center gap-3"
+              className="flex flex-col  min-h-36 justify-center items-center gap-3 rounded-xl" 
               style={{ backgroundColor: "rgb(181, 220, 242)",width:"33.333%" }}
             >
               <div className="w-20 h-20 bg-white flex flex-row justify-center items-center rounded-full">
@@ -152,7 +152,7 @@ export default function Page() {
               <p>Limit</p>
             </div>
             <div
-              className="flex flex-col  min-h-36 justify-center items-center gap-3"
+              className="flex flex-col  min-h-36 justify-center items-center gap-3 rounded-xl"
               style={{ backgroundColor: "rgb(181, 220, 242)",width:"33.333%" }}
             >
               <div className="w-20 h-20 bg-white flex flex-row justify-center items-center rounded-full">
@@ -161,7 +161,7 @@ export default function Page() {
               <p>Address</p>
             </div>
             <div
-              className="flex flex-col  min-h-36 justify-center items-center gap-3"
+              className="flex flex-col  min-h-36 justify-center items-center gap-3 rounded-xl"
               style={{ backgroundColor: "rgb(181, 220, 242)" ,width:"33.333%"}}
             >
               <div className="w-20 h-20 bg-white flex flex-row justify-center items-center rounded-full">
@@ -172,14 +172,14 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-row gap-4">
-        <div className="h-80 min-h-80" style={{width :"50%"}}>
+      <div className="w-full flex flex-row max-md:flex-col gap-4">
+        <div className="h-80 min-h-80 w-1/2 max-md:w-full " >
           <VerticalSecondBar />
         </div>
-        <div className="flex flex-col gap-4 bg-black p-4" style={{width :"50%"}}>
+        <div className="flex flex-col gap-4 bg-[#f8f9fa] rounded-xl p-4 w-1/2 max-md:w-full " >
           <span className="w-full flex flex-row justify-between">
-            <h3 className="text-lg font-semibold text-white">My Subsription</h3>
-            <button className="text-lg font-semibold text-white">Manage</button>
+            <h3 className="text-lg font-semibold ">My Subsription</h3>
+            <button className="text-lg font-semibold ">Manage</button>
           </span>
           <hr
             class="h-[4px] my-2 bg-grey border-0 dark:bg-white rounded-2xl"
@@ -193,9 +193,9 @@ export default function Page() {
               >
                 <SiNetflix size={30} />
               </div>
-              <h3 className="text-lg font-semibold text-white">Netflix</h3>
+              <h3 className="text-lg font-semibold ">Netflix</h3>
             </div>
-            <h3 className="text-lg font-semibold text-white">$23/month</h3>
+            <h3 className="text-lg font-semibold ">$23/month</h3>
           </div>
           <div className="flex flex-row justify-between items-center">
             <div className="flex flex-row justify-between items-center gap-4">
@@ -205,9 +205,9 @@ export default function Page() {
               >
                 <FaMusic size={30} />
               </div>
-              <h3 className="text-lg font-semibold text-white">Spotify</h3>
+              <h3 className="text-lg font-semibold ">Spotify</h3>
             </div>
-            <h3 className="text-lg font-semibold text-white">$23/month</h3>
+            <h3 className="text-lg font-semibold ">$23/month</h3>
           </div>
           <div className="flex flex-row justify-between items-center">
             <div className="flex flex-row justify-between items-center gap-4">
@@ -217,9 +217,9 @@ export default function Page() {
               >
                 <CgGym size={30} />
               </div>
-              <h3 className="text-lg font-semibold text-white">Gym</h3>
+              <h3 className="text-lg font-semibold ">Gym</h3>
             </div>
-            <h3 className="text-lg font-semibold text-white">$23/month</h3>
+            <h3 className="text-lg font-semibold ">$23/month</h3>
           </div>
         </div>
       </div>
@@ -228,19 +228,19 @@ export default function Page() {
 
       <div className="w-full flex flex-col gap-4">
         <div className="flex flex-row justify-between w-full">
-          <h1 className="text-2xl text-black font-semibold">Transactions</h1>
+          <h1 className="text-2xl  font-semibold">Transactions</h1>
           <button className="text-sm font-thin">
             <FaFilter size={20} />
           </button>
         </div>
         <label
           for="default-search"
-          class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+          class="mb-2 text-sm font-medium text-gray-900 sr-only dark:"
         >
           Search
         </label>
         <div class="relative">
-          <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+          <div className=" absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
             <svg
               class="w-4 h-4 text-gray-500 dark:text-gray-400"
               aria-hidden="true"
@@ -260,14 +260,14 @@ export default function Page() {
           <input
             type="search"
             id="default-search"
-            class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 dark:placeholder-gray-400 dark:text-white"
+            className="block w-full bg-[#a9c2d5]/10 p-4 ps-10 text-sm focus:border-[#233d60] rounded-lg"
             placeholder="Search Mockups, Logos..."
             required
           />
           <button
-          style={{backgroundColor:"rgb(112, 112, 113)"}}
+         
             type="submit"
-            class="text-white absolute end-2.5 bottom-2.5 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 "
+            className=" absolute bg-[#a9c2d5]/40 end-2.5 bottom-2.5  font-medium rounded-lg text-sm px-4 py-2 "
           >
             Search
           </button>
@@ -281,7 +281,7 @@ export default function Page() {
             <h3 className="text-sm font-thin my-2">Pending</h3>
           <div className="flex flex-row justify-between w-full items-center py-4">
             <div className="flex flex-row gap-4">
-              <div className="rounded-full w-10 h-10 bg-black flex flex-row justify-center items-center">
+              <div className="rounded-full w-10 h-10 bg-[#233d60] flex flex-row justify-center items-center">
                 <BiTransfer backgroundColor={"red"} color="white" size={25} />
               </div>
               <div className="flex flex-col">
@@ -293,7 +293,7 @@ export default function Page() {
           </div>
           <div className="flex flex-row justify-between w-full items-center py-4">
             <div className="flex flex-row gap-4">
-              <div className="rounded-full w-10 h-10 bg-black flex flex-row justify-center items-center">
+              <div className="rounded-full w-10 h-10 bg-[#233d60] flex flex-row justify-center items-center">
                 <BiTransfer backgroundColor={"red"} color="white" size={25} />
               </div>
               <div className="flex flex-col">
@@ -305,7 +305,7 @@ export default function Page() {
           </div>
           <div className="flex flex-row justify-between w-full items-center py-4">
             <div className="flex flex-row gap-4">
-              <div className="rounded-full w-10 h-10 bg-black flex flex-row justify-center items-center">
+              <div className="rounded-full w-10 h-10 bg-[#233d60] flex flex-row justify-center items-center">
                 <BiTransfer backgroundColor={"red"} color="white" size={25} />
               </div>
               <div className="flex flex-col">
@@ -318,7 +318,7 @@ export default function Page() {
           <h3 className="text-sm font-thin my-2">Today</h3>
           <div className="flex flex-row justify-between w-full items-center py-4">
             <div className="flex flex-row gap-4">
-              <div className="rounded-full w-10 h-10 bg-black flex flex-row justify-center items-center">
+              <div className="rounded-full w-10 h-10 bg-[#233d60] flex flex-row justify-center items-center">
                 <BiTransfer backgroundColor={"red"} color="white" size={25} />
               </div>
               <div className="flex flex-col">
@@ -330,7 +330,7 @@ export default function Page() {
           </div>
           <div className="flex flex-row justify-between w-full items-center py-4">
             <div className="flex flex-row gap-4">
-              <div className="rounded-full w-10 h-10 bg-black flex flex-row justify-center items-center">
+              <div className="rounded-full w-10 h-10 bg-[#233d60] flex flex-row justify-center items-center">
                 <BiTransfer backgroundColor={"red"} color="white" size={25} />
               </div>
               <div className="flex flex-col">
@@ -342,7 +342,7 @@ export default function Page() {
           </div>
           <div className="flex flex-row justify-between w-full py-4 items-center">
             <div className="flex flex-row gap-4">
-              <div className="rounded-full w-10 h-10 bg-black flex flex-row justify-center items-center">
+              <div className="rounded-full w-10 h-10 bg-[#233d60] flex flex-row justify-center items-center">
                 <BiTransfer backgroundColor={"red"} color="white" size={25} />
               </div>
               <div className="flex flex-col">
@@ -357,7 +357,7 @@ export default function Page() {
           <h3 className="text-sm font-thin my-2">21 January 2024</h3>
           <div className="flex flex-row justify-between w-full py-4 items-center">
             <div className="flex flex-row gap-4">
-              <div className="rounded-full w-10 h-10 bg-black flex flex-row justify-center items-center">
+              <div className="rounded-full w-10 h-10 bg-[#233d60] flex flex-row justify-center items-center">
                 <BiTransfer backgroundColor={"red"} color="white" size={25} />
               </div>
               <div className="flex flex-col">
@@ -372,7 +372,7 @@ export default function Page() {
           </div>
           <div className="flex flex-row justify-between w-full py-4 items-center">
             <div className="flex flex-row gap-4">
-              <div className="rounded-full w-10 h-10 bg-black flex flex-row justify-center items-center">
+              <div className="rounded-full w-10 h-10 bg-[#233d60] flex flex-row justify-center items-center">
                 <BiTransfer backgroundColor={"red"} color="white" size={25} />
               </div>
               <div className="flex flex-col">

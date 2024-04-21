@@ -7,39 +7,37 @@ import { FaLock } from "react-icons/fa";
 
 export default function Page() {
   return (
-    <div className="flex flex-col m-4 gap-4 px-4 overflow-y-auto">
+    <div className="flex flex-col m-4 gap-4  overflow-y-auto">
       <h1 className="text-2xl font-semibold">Accounts</h1>
-      <div className="flex flex-row w-full gap-4 ">
+      <div className="flex flex-row max-xl:flex-col w-full gap-4">
         <div className="flex flex-col w-2/6 gap-4">
           <div className="flex flex-col">
-            <div className="flex flex-col p-4 bg-black gap-4">
-              <h1 className="text-white text-lg font-semibold">
+            <div className="flex flex-col p-4 bg-balanceCard gap-4">
+              <h1 className=" text-lg font-semibold">
                 Checking Account
               </h1>
-              <h4 className="text-md font-thin text-white">Balance</h4>
+              <h4 className="text-md font-thin ">Balance</h4>
               <h1
-                className="text-white text-3xl font-semibold"
-                style={{ color: "#b5f2e5ff" }}
+                className=" text-3xl font-semibold"
+                style={{ color: "#51dbbd" }}
               >
                 10,000 USD
               </h1>
-              <hr class="h-px my-3 bg-gray-200 border-0 dark:bg-gray-700"></hr>
-              <h4 className="text-md font-thin text-white">IBAN</h4>
+              <hr class="h-px my-3 bg-[#233d60] border-0 "></hr>
+              <h4 className="text-md font-thin ">IBAN</h4>
               <span className="flex flex-row justify-between">
-                <h4 className="text-lg text-white">NL15</h4>
-                <h4 className="text-lg text-white">INGB</h4>
-                <h4 className="text-lg text-white">2301</h4>
-                <h4 className="text-lg text-white">8972</h4>
-                <h4 className="text-lg text-white">5221</h4>
+                <h4 className="text-lg ">NL15</h4>
+                <h4 className="text-lg ">INGB</h4>
+                <h4 className="text-lg ">2301</h4>
+                <h4 className="text-lg ">8972</h4>
+                <h4 className="text-lg ">5221</h4>
               </span>
-              <h4 className="text-md font-thin text-white">Account Owner</h4>
-              <h2 className="text-lg text-white">Abdul Saboor</h2>
+              <h4 className="text-md font-thin ">Account Owner</h4>
+              <h2 className="text-lg ">Abdul Saboor</h2>
             </div>
             <button
-              className="w-full min-h-12 flex felx-row justify-center gap-2 items-center"
-              style={{
-                backgroundColor: "rgb(198, 181, 242)",
-              }}
+              className="w-full min-h-12 flex felx-row justify-center gap-2 items-center bg-[#233d60] text-white"
+             
             >
               <p>See Details</p>
             </button>
@@ -47,34 +45,32 @@ export default function Page() {
         </div>
         <div className="flex flex-col w-2/6 gap-4">
           <div className="flex flex-col">
-            <div className="flex flex-col p-4 bg-black gap-4">
-              <h1 className="text-white text-lg font-semibold">
+            <div className="flex flex-col p-4 bg-balanceCard gap-4">
+              <h1 className=" text-lg font-semibold">
                 Checking Account
               </h1>
-              <h4 className="text-md font-thin text-white">Balance</h4>
+              <h4 className="text-md font-thin ">Balance</h4>
               <h1
-                className="text-white text-3xl font-semibold"
-                style={{ color: "#b5f2e5ff" }}
+                className=" text-3xl font-semibold"
+                style={{ color: "#51dbbd" }}
               >
                 10,000 USD
               </h1>
-              <hr class="h-px my-3 bg-gray-200 border-0 dark:bg-gray-700"></hr>
-              <h4 className="text-md font-thin text-white">IBAN</h4>
+              <hr class="h-px my-3 bg-[#233d60] border-0 "></hr>
+              <h4 className="text-md font-thin ">IBAN</h4>
               <span className="flex flex-row justify-between">
-                <h4 className="text-lg text-white">NL15</h4>
-                <h4 className="text-lg text-white">INGB</h4>
-                <h4 className="text-lg text-white">2301</h4>
-                <h4 className="text-lg text-white">8972</h4>
-                <h4 className="text-lg text-white">5221</h4>
+                <h4 className="text-lg ">NL15</h4>
+                <h4 className="text-lg ">INGB</h4>
+                <h4 className="text-lg ">2301</h4>
+                <h4 className="text-lg ">8972</h4>
+                <h4 className="text-lg ">5221</h4>
               </span>
-              <h4 className="text-md font-thin text-white">Account Owner</h4>
-              <h2 className="text-lg text-white">Abdul Saboor</h2>
+              <h4 className="text-md font-thin ">Account Owner</h4>
+              <h2 className="text-lg ">Abdul Saboor</h2>
             </div>
             <button
-              className="w-full min-h-12 flex felx-row justify-center gap-2 items-center"
-              style={{
-                backgroundColor: "rgb(198, 181, 242)",
-              }}
+              className="w-full min-h-12 flex felx-row justify-center gap-2 items-center bg-[#233d60] text-white"
+            
             >
               <p>See Details</p>
             </button>
@@ -82,40 +78,37 @@ export default function Page() {
         </div>
         <div className="flex flex-col w-2/6 gap-4">
           <div className="flex flex-col">
-            <div className="flex flex-col p-4 bg-black gap-4">
-              <h1 className="text-white text-lg font-semibold">
+            <div className="flex flex-col p-4 bg-balanceCard gap-4">
+              <h1 className=" text-lg font-semibold">
                 Checking Account
               </h1>
-              <h4 className="text-md font-thin text-white">Balance</h4>
+              <h4 className="text-md font-thin ">Balance</h4>
               <h1
-                className="text-white text-3xl font-semibold"
-                style={{ color: "#b5f2e5ff" }}
+                className=" text-3xl font-semibold"
+                style={{ color: "#51dbbd" }}
               >
                 10,000 USD
               </h1>
-              <hr class="h-px my-3 bg-gray-200 border-0 dark:bg-gray-700"></hr>
-              <h4 className="text-md font-thin text-white">IBAN</h4>
+              <hr class="h-px my-3 bg-[#233d60] border-0"></hr>
+              <h4 className="text-md font-thin ">IBAN</h4>
               <span className="flex flex-row justify-between">
-                <h4 className="text-lg text-white">NL15</h4>
-                <h4 className="text-lg text-white">INGB</h4>
-                <h4 className="text-lg text-white">2301</h4>
-                <h4 className="text-lg text-white">8972</h4>
-                <h4 className="text-lg text-white">5221</h4>
+                <h4 className="text-lg ">NL15</h4>
+                <h4 className="text-lg ">INGB</h4>
+                <h4 className="text-lg ">2301</h4>
+                <h4 className="text-lg ">8972</h4>
+                <h4 className="text-lg ">5221</h4>
               </span>
-              <h4 className="text-md font-thin text-white">Account Owner</h4>
-              <h2 className="text-lg text-white">Abdul Saboor</h2>
+              <h4 className="text-md font-thin ">Account Owner</h4>
+              <h2 className="text-lg ">Abdul Saboor</h2>
             </div>
             <button
-              className="w-full min-h-12 flex felx-row justify-center gap-2 items-center"
-              style={{
-                backgroundColor: "rgb(198, 181, 242)",
-              }}
+              className="w-full min-h-12 flex felx-row justify-center gap-2 items-center bg-[#233d60] text-white" 
             >
               <p>See Details</p>
             </button>
           </div>
         </div>
-        <div></div>
+
       </div>
       <h1 className="text-2xl font-semibold">My Cards</h1>
       <div className="flex flex-row gap-4 ">
@@ -132,7 +125,7 @@ export default function Page() {
               backgroundColor: "rgb(254, 192, 167)",
             }}
           >
-            <div className="flex flex-row p-4 justify-between items-center">
+            <div className="flex flex-row p-4 justify-between items-center ">
               <Image
                 className="w-20 h-20"
                 src={mastercard}
@@ -141,8 +134,8 @@ export default function Page() {
               <FcSimCardChip size={60} />
             </div>
             <div className="flex flex-col gap-2 p-6">
-              <h4 className="text-black">Available Balance</h4>
-              <h2 className="text-black text-2xl font-bold">USD 100,000.00</h2>
+              <h4 >Available Balance</h4>
+              <h2 className=" text-2xl font-bold">USD 100,000.00</h2>
             </div>
             <div className="flex flex-col p-6">
               <div className="flex flex-row gap-2">
@@ -161,14 +154,14 @@ export default function Page() {
           <div className="w-1/2 flex flex-col gap-8">
             <div>
               <h3 className="text-lg font-semibold">Credit Cards</h3>
-              <hr class="h-[4px] my-2 bg-black border-0 dark:bg-white rounded-2xl"></hr>
+              <hr class="h-[4px] my-2 bg-[#233d60] border-0 dark:bg-white rounded-2xl"></hr>
             </div>
 
             <div className="flex flex-col gap-2">
             <h4 className="text-md font-thin">Type</h4>
               <div className="flex flex-row gap-4 items-center">
                 <h4 className="font-semibold text-lg">Physical</h4>
-                <div className="flex flex-row gap-2">
+                <div className="flex flex-row gap-2 items-center justify-center">
                   <FaCircle size={15} color="rgb(32, 178, 170)" />
                   <p className="font-thin">Active</p>
                 </div>
@@ -189,7 +182,7 @@ export default function Page() {
             <h4 className="text-md font-thin">Expiration Date</h4>
               <span className="flex flex-row items-center gap-4">
                 <h4 className="text-md ">12/24</h4>
-                <div className="flex flex-row gap-2">
+                <div className="flex flex-row gap-2 items-center justify-center">
                   <FaCircle size={15} color="#d62554ff" />
                   <p className="font-semibold" style={{color:"#d62554ff"}}>1 Month Left</p>
                 </div>
@@ -208,10 +201,8 @@ export default function Page() {
           </div>
        </div>
        <button
-              className="w-full min-h-12 flex felx-row justify-center gap-2 items-center"
-              style={{
-                backgroundColor: "rgb(198, 181, 242)",
-              }}
+              className="w-full min-h-12 flex felx-row justify-center gap-2 items-center bg-[#233d60] text-white"
+              
             >
               <p>See Details</p>
             </button>
@@ -238,8 +229,8 @@ export default function Page() {
               <FcSimCardChip size={60} />
             </div>
             <div className="flex flex-col gap-2 p-6">
-              <h4 className="text-black">Available Balance</h4>
-              <h2 className="text-black text-2xl font-bold">USD 100,000.00</h2>
+              <h4 >Available Balance</h4>
+              <h2 className=" text-2xl font-bold">USD 100,000.00</h2>
             </div>
             <div className="flex flex-col p-6">
               <div className="flex flex-row gap-2">
@@ -258,14 +249,14 @@ export default function Page() {
           <div className="w-1/2 flex flex-col gap-8">
             <div>
               <h3 className="text-lg font-semibold">Credit Cards</h3>
-              <hr class="h-[4px] my-2 bg-black border-0 dark:bg-white rounded-2xl"></hr>
+              <hr class="h-[4px] my-2 bg-[#233d60] border-0 dark:bg-white rounded-2xl"></hr>
             </div>
 
             <div className="flex flex-col gap-2">
             <h4 className="text-md font-thin">Type</h4>
               <div className="flex flex-row gap-4 items-center">
                 <h4 className="font-semibold text-lg">Physical</h4>
-                <div className="flex flex-row gap-2">
+                <div className="flex flex-row gap-2 items-center justify-center">
                   <FaCircle size={15} color="rgb(32, 178, 170)" />
                   <p className="font-thin">Active</p>
                 </div>
@@ -286,7 +277,7 @@ export default function Page() {
             <h4 className="text-md font-thin">Expiration Date</h4>
               <span className="flex flex-row items-center gap-4">
                 <h4 className="text-md ">12/24</h4>
-                <div className="flex flex-row gap-2">
+                <div className="flex flex-row gap-2 items-center justify-center">
                   <FaCircle size={15} color="#d62554ff" />
                   <p className="font-semibold" style={{color:"#d62554ff"}}>1 Month Left</p>
                 </div>
@@ -305,15 +296,12 @@ export default function Page() {
           </div>
        </div>
        <button
-              className="w-full min-h-12 flex felx-row justify-center gap-2 items-center"
-              style={{
-                backgroundColor: "rgb(198, 181, 242)",
-              }}
+              className="w-full min-h-12 flex felx-row justify-center gap-2 items-center bg-[#233d60] text-white"
+            
             >
               <p>See Details</p>
             </button>
         </div>
-        <div></div>
       </div>
     </div>
   );

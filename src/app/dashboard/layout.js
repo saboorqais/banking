@@ -25,8 +25,8 @@ import { FaInvision } from "react-icons/fa6";
 
 function DashboardLayout({ children }) {
   return (
-    <section className="flex flex-row min-h-screen max-h-screen overflow-y-hidden ">
-      <aside className=" w-64 max-w-72 align-center flex flex-col justify-between bg-sidebar">
+    <section className="flex flex-row min-h-screen overflow-y-hidden text-[#233d60] ">
+      <aside className=" w-64 max-w-72 align-center flex flex-col justify-between bg-sidebar max-[1050px]:hidden">
         <div className="flex flex-col  w-full items-left px-6">
           <Link href={"/dashboard"}>
             <h1 className="text-3xl	 mt-6 w-3/6 font-bold text-black">
@@ -97,7 +97,7 @@ function DashboardLayout({ children }) {
         </div>
       </aside>
       <div className="w-full flex flex-col">
-        <navbar className="min-w-full flex flex-row justify-between p-4">
+        <navbar className="flex flex-row justify-between p-4">
           <div className="flex w-full gap-6 items-center">
             <h1 className="text-2xl text-center font-bold text-black">
               Dashbord

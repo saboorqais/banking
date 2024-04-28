@@ -78,7 +78,7 @@ export default function Page() {
         </div>
      
       </div>
-      <div className="flex flex-row gap-4 p-4 min-h-80 min-w-96 max-[780px]:flex-col">
+      <div className="flex flex-row gap-4 p-4 min-h-80 w-full max-[780px]:flex-col">
         <div className="w-1/2 max-lg:w-full">
           <VerticalSecondBar />
         </div>

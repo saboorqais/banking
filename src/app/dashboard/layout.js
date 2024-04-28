@@ -1,8 +1,12 @@
 "use client";
-import { FaSignOutAlt } from "react-icons/fa";
+
 import { BiCard, BiTransfer } from "react-icons/bi";
 import { MdOutlineAccountBalanceWallet } from "react-icons/md";
 import Link from "next/link";
+import { CiLogout } from "react-icons/ci";
+import { TiThMenu } from "react-icons/ti";
+
+import { FaSignOutAlt } from "react-icons/fa";
 
 import { IoIosSettings } from "react-icons/io";
 import { Button } from "@/components/ui/button";
@@ -25,7 +29,7 @@ import { FaInvision } from "react-icons/fa6";
 
 function DashboardLayout({ children }) {
   return (
-    <section className="flex flex-row min-h-screen overflow-y-hidden text-[#233d60] ">
+    <section className="flex flex-row min-h-scree overflow-hidden  text-[#233d60] mb-16">
       <aside className=" w-64 max-w-72 align-center flex flex-col justify-between bg-sidebar max-[1050px]:hidden">
         <div className="flex flex-col  w-full items-left px-6">
           <Link href={"/dashboard"}>
@@ -97,26 +101,26 @@ function DashboardLayout({ children }) {
         </div>
       </aside>
       <div className="w-full flex flex-col">
-        <navbar className="flex flex-row justify-between p-4">
-          <div className="flex w-full gap-6 items-center">
+        <navbar className="flex flex-row justify-around p-4">
+          <div className="flex w-full  items-center">
             <h1 className="text-2xl text-center font-bold text-black">
               Dashbord
             </h1>
           </div>
-          <div className="flex flex-row  justify-between items-center m-3">
+          <div className="flex flex-row  justify-between items-center ">
             {" "}
             {/* Render the user icon */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="outline" className="border-0 focus:border-0">
-                  {" "}
+                
                   <Avatar>
                     <AvatarImage src="https://github.com/shadcn.png" />
                     <AvatarFallback>CN</AvatarFallback>
                   </Avatar>
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-56">
+              <DropdownMenuContent >
                 <DropdownMenuLabel>My Account</DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuGroup>
@@ -172,6 +176,28 @@ function DashboardLayout({ children }) {
           </div>
         </navbar>
         {children}
+
+      </div>
+       <div className="h-16 w-full  overflow-x-scroll overflow-y-scroll fixed bottom-0 bg-[#f1f2f4] max-[1050px]:flex hidden flex-row ">
+
+    <div className="h-16 w-3/5 max-[555px]:hidden  overflow-x-scroll overflow-y-scroll fixed bottom-0 bg-[#f1f2f4] max-[1050px]:flex hidden flex-row">
+    <button className="hover:border-[#233d60]  border-[3px] rounded-xl m-3 bg-white text-[#233d60] min-w-48 text-lg " >Transfer</button>
+        <button className="border-[#233d60] rounded-xl m-3 bg-[#233d60] text-white min-w-48  text-lg " >Transfer</button>
+        <button className="border-[#233d60] rounded-xl m-3 bg-white text-[#233d60] min-w-48  text-lg " >Transfer</button>
+        <button className="border-[#233d60] rounded-xl m-3 bg-white text-[#233d60] min-w-48  text-lg " >Transfer</button>
+          <button className="border-[#233d60] rounded-xl m-3 bg-white text-[#233d60] min-w-48  text-lg " >Transfer</button>
+          <button className="border-[#233d60] rounded-xl m-3 bg-white text-[#233d60] min-w-48  text-lg " >Transfer</button>       
+    </div>
+       <div className="h-16 w-2/5 max-[555px]:w-full fixed right-0 flex flex-row z-50 " style={{
+   WebkitBoxShadow: "-51px 68px 115px 8px rgba(0,0,0,0.9)",
+   MozBoxShadow: "-51px 68px 115px 8px rgba(0,0,0,9)",
+   boxShadow: "-51px 68px 115px 8px rgba(0,0,0,0.9)"
+       }}>
+       
+        <button className="flex max-[555px]:w-1/3 min-[555px]:hidden flex-row gap-2 justify-center items-center bg-[#233d60]  h-16 w-1/2  text-white text-lg " >Menu <TiThMenu size={25} color={"white"} /></button>
+          <button className="flex flex-row gap-2 max-[555px]:w-1/3 justify-center items-center bg-[#233d60] h-16 w-1/2     text-white  text-lg " >Settings<IoIosSettings size={30} color="white" /></button>       
+       <button className="flex flex-row gap-2 max-[555px]:w-1/3 justify-center items-center bg-[#c33d3d]  h-16 w-1/2  text-white text-lg " >SignOut <FaSignOutAlt size={25} color={"#233d60"} /></button>
+       </div>
       </div>
     </section>
   );
